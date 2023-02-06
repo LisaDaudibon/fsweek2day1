@@ -8,6 +8,15 @@
     
     Plus de potins très croustillants vont arriver mais n'hésite à nous offrir le premier <a href="/gossips/new/">pottin</a> !    
     
+    
     </h1>
+
+    <% gossips.each do |gossip| %>
+    <p>
+      <%= gossip.author %><br/>
+      <%= gossip.content %>
+    </p>
+    <% end %>
+
   </body>
 </html>
